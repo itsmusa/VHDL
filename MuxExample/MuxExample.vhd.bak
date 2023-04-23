@@ -1,0 +1,28 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY MuxExample IS
+PORT(
+	A: IN STD_LOGIC;
+	B: IN STD_LOGIC;
+	C: IN STD_LOGIC;
+	D: IN STD_LOGIC;
+	sel: IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+	LED: OUT STD_LOGIC;
+	);
+END MuxExample;
+
+ARCHITECTURE df of MuxExample IS
+	BEGIN
+		PROCESS(sel, A, B, C, D)
+		BEGIN
+			CASE sel IS
+				WHEN "00" => LED <= A;
+				WHEN "01" => LED <= B;
+				WHEN "10" => LED <= C;
+				WHEN "11" => LED <= D;
+				WHEN OTHERS => NULL;
+			END CASE;
+		END PROCESS;
+
+END df;
