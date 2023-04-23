@@ -1,0 +1,23 @@
+|DeMuxCase
+E => LEDs[0]$latch.LATCH_ENABLE
+E => LEDs[1]$latch.LATCH_ENABLE
+E => LEDs[2]$latch.LATCH_ENABLE
+E => LEDs[3]$latch.LATCH_ENABLE
+sel[0] => Mux0.IN5
+sel[0] => Mux1.IN5
+sel[0] => Mux2.IN5
+sel[0] => Mux3.IN5
+sel[1] => Mux0.IN4
+sel[1] => Mux1.IN4
+sel[1] => Mux2.IN4
+sel[1] => Mux3.IN4
+LEDs[0] << LEDs[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+LEDs[1] << LEDs[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+LEDs[2] << LEDs[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+LEDs[3] << LEDs[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+LEDs[4] << <VCC>
+LEDs[5] << <VCC>
+LEDs[6] << <VCC>
+LEDs[7] << <VCC>
+
+

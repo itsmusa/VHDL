@@ -1,0 +1,11 @@
+Fitter Status : Successful - Sun Apr 16 13:55:10 2023
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : DeMuxCase
+Top-level Entity Name : DeMuxCase
+Family : MAX II
+Device : EPM240T100C5
+Timing Models : Final
+Total logic elements : 8 / 240 ( 3 % )
+Total pins : 11 / 80 ( 14 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )
