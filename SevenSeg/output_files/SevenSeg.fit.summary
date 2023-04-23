@@ -1,0 +1,11 @@
+Fitter Status : Successful - Thu Apr 20 17:27:46 2023
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : SevenSeg
+Top-level Entity Name : SevenSeg
+Family : MAX II
+Device : EPM240T100C5
+Timing Models : Final
+Total logic elements : 7 / 240 ( 3 % )
+Total pins : 22 / 80 ( 28 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

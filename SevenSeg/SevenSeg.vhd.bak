@@ -1,0 +1,28 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY CaseExample IS
+PORT(
+	SWs: IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+	LEDs: OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
+	);
+END CaseExample;
+
+ARCHITECTURE df OF CaseExample IS
+BEGIN
+	LEDs(7 DOWNTO 3) <= "11111";
+
+	PROCESS(SWs)
+	BEGIN
+		CASE SWs is
+			WHEN "000" => LEDs(2 DOWNTO 0) <= "000";
+			WHEN "001" => LEDs(2 DOWNTO 0) <= "001";
+			WHEN "010" => LEDs(2 DOWNTO 0) <= "010";
+			WHEN "011" => LEDs(2 DOWNTO 0) <= "011";
+			WHEN "100" => LEDs(2 DOWNTO 0) <= "100";
+			WHEN "101" => LEDs(2 DOWNTO 0) <= "101";
+			WHEN "110" => LEDs(2 DOWNTO 0) <= "110";
+			WHEN "111" => LEDs(2 DOWNTO 0) <= "111";
+		END CASE;
+	END PROCESS;
+END df;
